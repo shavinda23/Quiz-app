@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz Challenge</h1>
+            <p>Test your knowledge with these questions!</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+
+        <div class="start-screen" id="start-screen">
+            <p>You will get 20 random questions out of our pool of 40 questions.</p>
+            <button class="btn start-btn" id="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="quiz-container" id="quiz-container">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div class="feedback" id="feedback"></div>
+            <div class="navigation">
+                <button class="btn" id="prev-btn" disabled>Previous</button>
+                <button class="btn" id="next-btn">Next</button>
+            </div>
+        </div>
+
+        <div class="result-container" id="result-container">
+            <h2>Quiz Completed!</h2>
+            <div class="score" id="score"></div>
+            <div class="percentage" id="percentage"></div>
+            <button class="btn" id="restart-btn">Take Quiz Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
